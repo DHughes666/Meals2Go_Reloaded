@@ -1,5 +1,4 @@
 import React from "react";
-import { Text, View } from "react-native";
 import styled from "styled-components/native";
 import { Card } from "react-native-paper";
 import { homey } from "../../../../assets/images/home_bg.jpg";
@@ -7,6 +6,7 @@ import { homey } from "../../../../assets/images/home_bg.jpg";
 const Title = styled.Text`
   padding: 16px;
   font-size: 25;
+  color: ${({ theme }) => theme.colors.ui.primary};
 `;
 const RestaurantCard = styled(Card)`
   margin: 10px;
