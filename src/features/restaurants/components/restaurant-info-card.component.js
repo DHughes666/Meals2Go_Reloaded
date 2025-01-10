@@ -4,8 +4,9 @@ import { Card } from "react-native-paper";
 import { homey } from "../../../../assets/images/home_bg.jpg";
 
 const Title = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.body};
   padding: 16px;
-  font-size: 25;
+  font-size: 25px;
   color: ${({ theme }) => theme.colors.ui.primary};
 `;
 const RestaurantCard = styled(Card)`
