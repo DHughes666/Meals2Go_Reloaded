@@ -30,11 +30,10 @@ export const RestaurantScreen = () => {
             value={searchQuery}
           />
         </RestaurantSearchView>
-        <FlatList
+        <RestaurantListView
           data={[{ name: 1 }, { name: 2 }]}
           renderItem={() => <RestaurantInfoCard />}
           keyExtractor={(item) => item.name}
-          contentContainerStyle={{ padding: 16 }}
         />
       </RestaurantSafeAreaView>
     </>
