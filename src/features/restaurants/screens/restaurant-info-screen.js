@@ -1,5 +1,5 @@
 import React from "react";
-import { FlatList } from "react-native";
+import { FlatList, Platform } from "react-native";
 import styled from "styled-components";
 import { Searchbar } from "react-native-paper";
 import { useState } from "react";
@@ -7,6 +7,7 @@ import { RestaurantInfoCard } from "../components/restaurant-info-card-component
 
 const RestaurantSafeAreaView = styled.SafeAreaView`
   flex: 1px;
+  margin-top: ${Platform.OS === "android" ? "16px" : "0px"};
   backgroundcolor: ${({ theme }) => theme.colors.brand.primary};
 `;
 
